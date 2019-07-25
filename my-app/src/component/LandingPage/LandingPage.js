@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
 import "./LandingPage.css"
+import SearchingContainer from '../Searching/SearchingContainer';
+import { Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export class LandingPage extends Component {
+
     render() {
+
         return (
-            <div>
-                <div className="title">
+
+         <div className="landing-container">
                     <h1>ICEntro</h1>
-                </div>
-                <div className="content">
-                    <div className="temperature">
-                        <h3>37 C</h3>
-                    </div>
-                    <div className="button">
-                        <button>
-                            Get ICE!
-                    </button>
-                    </div>
-                </div>
+                        <h3>{this.props.temperature}</h3>
+                        <button onClick={this.onClickRoute}>
+                            <Link to="/search">Get ICE!</Link>
+                        </button>
             </div>
         )
     }

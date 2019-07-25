@@ -4,6 +4,7 @@ import "./App.css";
 // import Navigation from "./Components/Navigation/navigationBar";
 
 class App extends Component {
+  
   render() {
     return (
       <div className="main" style={{ height: "100%" }}>
