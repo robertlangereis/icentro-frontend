@@ -9,10 +9,10 @@ import TooColdDefault from "./component/TooColdDefault";
 const Router = () => (
     <Switch>
         {/* <Route exact path="/" component={LandingPage} /> */}
-        <Route path="/too-cold" exact component={TooColdDefault} />
+        <Route path="/" exact component={TooColdDefault} />
         {/* <Route path="/search" exact component={loaderPage} /> */}
         {/* <Route path="/found-icecream" exact component={iceCreamResults} /> */}
-        {/* <Route exact path="/" render={() => <Redirect to="/" />} /> */}
+        <Route exact path="/" render={() => <Redirect to="/" />} />
     </Switch>
 );
 
