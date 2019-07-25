@@ -31,3 +31,7 @@
     transform: rotate(360deg);
   }
 }
+
+.resultaten-titel{
+  text-align: center
+}
