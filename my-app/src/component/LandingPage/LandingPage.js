@@ -7,12 +7,6 @@ import { Link } from "react-router-dom";
 
 export class LandingPage extends Component {
 
-
-
-    onClickRoute = () => {
-        return(<Link className="item-link" to={`/search`}></Link>)
-    }
-
     render() {
 
         return (
@@ -26,8 +20,8 @@ export class LandingPage extends Component {
                     </div>
                     <div className="button">
                         <button onClick={this.onClickRoute}>
-                            Get ICE!
-                    </button>
+                            <Link to="/search">Get ICE!</Link>
+                        </button>
                     </div>
                 </div>
             </div>
