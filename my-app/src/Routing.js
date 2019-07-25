@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import LandingPageContainer from "./Components/LandingPage/LandingPageContainer";
+import LandingPageContainer from "./component/LandingPage/LandingPageContainer";
 import TooColdDefault from "./component/TooColdDefault";
 // import loaderPage from "./Components/loaderPage";
 // import iceCreamResults from "./Components/iceCreamResults";
