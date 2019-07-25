@@ -12,7 +12,7 @@ const Router = () => (
         <Route path="/too-cold" exact component={TooColdDefault} />
         {/* <Route path="/search" exact component={loaderPage} /> */}
         {/* <Route path="/found-icecream" exact component={iceCreamResults} /> */}
-        {/* <Route exact path="/" render={() => <Redirect to="/" />} /> */}
+        <Route exact path="/" render={() => <Redirect to="/" />} />
     </Switch>
 );
 
