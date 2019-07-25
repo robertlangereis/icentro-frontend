@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+  background-color: fixed;
+}
+
+.body{
+    /* background-image: linear-gradient(#F5BB00, ); */
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(46, 82, 136), rgb(0, 183, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gif{
+    width: 30rem;
+    height: 25rem;
+}
