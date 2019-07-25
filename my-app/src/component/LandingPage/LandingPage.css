@@ -2,20 +2,16 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
-    background-color: orange;
-    width: 100%;
+    background-color: #EC9F05;
+    width: 100vw;
+    height: 100vh;
+    color: white;
 }
 
-.title {
-    margin: 0 auto;
-    width: 50%;
-}
-
-.content {
-    margin: 200px auto;
-    width: 50%;
+.landing-container {
+    text-align: center;
 }
