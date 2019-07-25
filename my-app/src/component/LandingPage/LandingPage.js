@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 import "./LandingPage.css"
+import SearchingContainer from '../Searching/SearchingContainer';
+import { Switch, Route } from "react-router-dom";
 
 export class LandingPage extends Component {
+
+
+
+
     render() {
+
         return (
             <div>
                 <div className="title">
@@ -10,10 +17,10 @@ export class LandingPage extends Component {
                 </div>
                 <div className="content">
                     <div className="temperature">
-                        <h3>37 C</h3>
+                        <h3>{this.props.temperature}</h3>
                     </div>
                     <div className="button">
-                        <button>
+                        <button onClick={()=>SearchingContainer}>
                             Get ICE!
                     </button>
                     </div>

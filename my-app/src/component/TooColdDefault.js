@@ -12,7 +12,7 @@ class TooColdDefault extends Component {
             <div className="body">
                 <div className='title'>
                     <h1>ICEntro <span aria-label="iceCream-Emoji" role="img">🍦</span></h1>
-                    <h2>No man, it's below <Temperature/> No time for IceCream!</h2>
+                    <h2>No man, it's below <Temperature temperature={this.props.temperature}/> No time for IceCream!</h2>
                     <img className="gif" src={tooColdGif} alt="...it's too cold..." />
                     <img className="gif" src={noIcecreamGif} alt="no ice cream today..." />
                 </div>
