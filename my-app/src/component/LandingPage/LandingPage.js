@@ -11,20 +11,10 @@ export class LandingPage extends Component {
     render() {
 
         return (
-            <div>
-                <div className="title">
-                    <h1>ICEntro</h1>
-                </div>
-                <div className="content">
-                    <div className="temperature">
-                        <h3>{this.props.temperature}</h3>
-                    </div>
-                    <div className="button">
-                        <button onClick={()=>SearchingContainer}>
-                            Get ICE!
-                    </button>
-                    </div>
-                </div>
+            <div className="landing-container">
+                <h1>ICEntro</h1>
+                <h3>{this.props.temperature}</h3>
+                <button onClick={()=>SearchingContainer}>Get ICE!</button>
             </div>
         )
     }
