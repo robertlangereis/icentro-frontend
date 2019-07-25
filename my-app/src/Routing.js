@@ -1,14 +1,14 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-// import LandingPage from "./Components/LandingPage";
+import LandingPageContainer from "./Components/LandingPage/LandingPageContainer";
 import TooColdDefault from "./component/TooColdDefault";
 // import loaderPage from "./Components/loaderPage";
 // import iceCreamResults from "./Components/iceCreamResults";
 
 const Router = () => (
     <Switch>
-        {/* <Route exact path="/" component={LandingPage} /> */}
+        <Route exact path="/" component={LandingPageContainer} />
         <Route path="/too-cold" exact component={TooColdDefault} />
         {/* <Route path="/search" exact component={loaderPage} /> */}
         {/* <Route path="/found-icecream" exact component={iceCreamResults} /> */}
