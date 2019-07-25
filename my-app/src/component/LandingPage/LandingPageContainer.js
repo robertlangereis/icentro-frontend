@@ -5,7 +5,10 @@ export default class LandingPageContainer extends Component {
     render() {
         return (
             <div>
-                <LandingPage />
+                <div>
+                    <LandingPage />
+                </div>
+
             </div>
         )
     }
