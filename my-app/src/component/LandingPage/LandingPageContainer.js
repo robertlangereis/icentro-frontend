@@ -29,9 +29,9 @@ export default class LandingPageContainer extends Component {
 
         //  9ca3035404a32c3e8ffa93136522ae67
 
-        fetch(`https://api.stormglass.io/v1/weather/point?lat=${lat}&lng=${lng}&params=${params}&end=2019-07-25&source=dwd`, {
+        this.state.temperature === null && fetch(`https://api.stormglass.io/v1/weather/point?lat=${lat}&lng=${lng}&params=${params}&end=2019-07-25&source=dwd`, {
             headers: {
-                'Authorization': 'd2614104-aed8-11e9-9c0e-0242ac130004-d26141fe-aed8-11e9-9c0e-0242ac130004'
+                'Authorization': '7d61fa8c-aee1-11e9-afdd-0242ac130004-7d61fb90-aee1-11e9-afdd-0242ac130004'
             }
         }).then((response) => response.json()).then((jsonData) => {
             console.log(jsonData.hours[0].airTemperature[0].value)
